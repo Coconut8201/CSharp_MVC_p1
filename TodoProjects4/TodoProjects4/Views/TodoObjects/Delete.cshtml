@@ -1,0 +1,89 @@
+﻿@model TodoProjects4.Models.TodoObject
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>TodoObject</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.todo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.todo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TotalScore)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TotalScore)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.q1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.q1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.q2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.q2)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.q3)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.q3)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.q4)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.q4)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.note)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.note)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.deadLine)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.deadLine)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

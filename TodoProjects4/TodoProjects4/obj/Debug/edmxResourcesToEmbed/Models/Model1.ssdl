@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="TodoModelModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="TodoObject">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="TotalScore" Type="int" Nullable="false" />
+    <Property Name="q1" Type="int" />
+    <Property Name="q2" Type="int" />
+    <Property Name="q3" Type="int" />
+    <Property Name="q4" Type="int" />
+    <Property Name="note" Type="varchar" MaxLength="100" />
+    <Property Name="deadLine" Type="datetime" />
+    <Property Name="todo" Type="varchar" MaxLength="100" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="TodoModelModelStoreContainer">
+    <EntitySet Name="TodoObject" EntityType="Self.TodoObject" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

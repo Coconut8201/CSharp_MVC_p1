@@ -1,0 +1,82 @@
+﻿@model TodoProjects4.Models.TodoObject
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>TodoObject</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.TotalScore)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TotalScore)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.q1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.q1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.q2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.q2)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.q3)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.q3)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.q4)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.q4)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.note)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.note)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.deadLine)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.deadLine)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.todo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.todo)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

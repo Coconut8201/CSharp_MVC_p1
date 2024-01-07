@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="TodoModelModelStoreContainer" CdmEntityContainer="TodoModelEntities">
+    <EntitySetMapping Name="TodoObject">
+      <EntityTypeMapping TypeName="TodoModelModel.TodoObject">
+        <MappingFragment StoreEntitySet="TodoObject">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="TotalScore" ColumnName="TotalScore" />
+          <ScalarProperty Name="q1" ColumnName="q1" />
+          <ScalarProperty Name="q2" ColumnName="q2" />
+          <ScalarProperty Name="q3" ColumnName="q3" />
+          <ScalarProperty Name="q4" ColumnName="q4" />
+          <ScalarProperty Name="note" ColumnName="note" />
+          <ScalarProperty Name="deadLine" ColumnName="deadLine" />
+          <ScalarProperty Name="todo" ColumnName="todo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

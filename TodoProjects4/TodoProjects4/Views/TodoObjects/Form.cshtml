@@ -1,0 +1,52 @@
+﻿@model TodoProjects4.Models.TodoObject
+
+@{
+    ViewBag.Title = "Form";
+}
+
+<h2>Form</h2>
+
+@using (Html.BeginForm("Form", "TodoObjects", FormMethod.Post))
+{
+    <fieldset>
+        <legend>緊急程度</legend>
+        <label>@Html.RadioButton("emergencyLevel", "1") 1</label>
+        <label>@Html.RadioButton("emergencyLevel", "2") 2</label>
+        <label>@Html.RadioButton("emergencyLevel", "3") 3</label>
+        <label>@Html.RadioButton("emergencyLevel", "4") 4</label>
+        <label>@Html.RadioButton("emergencyLevel", "5") 5</label>
+    </fieldset>
+
+    <fieldset>
+        <legend>喜好程度</legend>
+        <label>@Html.RadioButton("preferenceLevel", "1") 1</label>
+        <label>@Html.RadioButton("preferenceLevel", "2") 2</label>
+        <label>@Html.RadioButton("preferenceLevel", "3") 3</label>
+        <label>@Html.RadioButton("preferenceLevel", "4") 4</label>
+        <label>@Html.RadioButton("preferenceLevel", "5") 5</label>
+    </fieldset>
+
+    //demandLevel
+    <fieldset>
+        <legend>需求程度</legend>
+        <label>@Html.RadioButton("demandLevel", "1") 1</label>
+        <label>@Html.RadioButton("demandLevel", "2") 2</label>
+        <label>@Html.RadioButton("demandLevel", "3") 3</label>
+        <label>@Html.RadioButton("demandLevel", "4") 4</label>
+        <label>@Html.RadioButton("demandLevel", "5") 5</label>
+    </fieldset>
+
+    //importance
+    <fieldset>
+        <legend>重要程度</legend>
+        <label>@Html.RadioButton("importanceLevel", "1") 1</label>
+        <label>@Html.RadioButton("importanceLevel", "2") 2</label>
+        <label>@Html.RadioButton("importanceLevel", "3") 3</label>
+        <label>@Html.RadioButton("importanceLevel", "4") 4</label>
+        <label>@Html.RadioButton("importanceLevel", "5") 5</label>
+    </fieldset>
+
+    <button type="submit">Submit</button>
+
+}
+
